@@ -26,3 +26,6 @@ Proyek Cloud Computing Week 12 menggunakan arsitektur Serverless di AWS Learner 
 2. Membuat fungsi AWS Lambda (Python 3.12) dengan execution role `LabRole`.
 3. Mengaktifkan Function URL dan menghubungkan Environment Variable `BUCKET_NAME`.
 4. Menguji konektivitas CRUD melalui Lambda Console Test dan HTTP client.
+
+## Implementasi pada AWS Academy Sandbox
+Karena kebijakan IAM pada lingkungan *sandbox* AWS Academy Lab Project (`ALPMCPBv1`) membatasi izin pembuatan fungsi AWS Lambda secara langsung (`lambda:CreateFunction`), arsitektur komputasi **Track C (Serverless)** diimplementasikan menggunakan layanan komputasi *serverless* setara yang tersedia di *sandbox*, yaitu **Amazon ECS dengan AWS Fargate** (`serverless-loans-cluster`, *task definition* `equipment-loans-task`) yang terintegrasi dengan penyimpanan objek **Amazon S3** (`cc-loans-bintangdanes-2026`).
